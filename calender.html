@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link for fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- link for custom css -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper active">
+      <!-- siderbar -->
+      <div class="sidebar">
+        <div class="aside">
+          <div class="logo-text">
+            <img src="./static/images/image1.png" alt="logo" />
+            <h1>Spectraflix</h1>
+          </div>
+          <!-- nav-item -->
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">
+                <i class="fad fa-th-large"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">
+                <i class="fad fa-user"></i>
+                <span>Authentication</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="./login.html" class="dropdown-link">Login</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="./register.html" class="dropdown-link">Register</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="./profile.html" class="dropdown-link">Profile</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="./email.html" class="nav-link active">
+                <i class="fad fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./messages.html" class="nav-link"
+                >S
+                <i class="fad fa-comments"></i>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="calender.html" class="nav-link">
+                <i class="fad fa-calendar-alt"></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#bar-chart" class="nav-link">
+                <i class="fad fa-chart-pie-alt"></i>
+                <span>Charts</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">
+                <i class="fad fa-list"></i>
+                <span>Components</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="./tables.html" class="dropdown-link">Tables</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="main-content">
+        <div class="header">
+          <div class="container">
+            <div class="header-inner">
+              <div id="toggle-sidebar" class="sidebar-toggler">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="greeting">
+                <h3>Good Morning!</h3>
+              </div>
+              <div class="search-box">
+                <i class="fas fa-search icon"></i>
+              </div>
+              <div class="notification">
+                <i class="fas fa-bell"></i>
+                <span class="notification-count">3</span>
+              </div>
+              <div class="theme">
+                <i class="fas fa-adjust"></i>
+              </div>
+              <div class="expand">
+                <i class="fas fa-expand"></i>
+              </div>
+              <div class="profile">
+                <img src="./static/images/image.png" alt="User" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- claneder -->
+        <div id="calender"></div>
+
+        <!-- footer -->
+        <div class="footer">
+          <div class="container">
+            <div class="footer-inner">
+              <div class="copyright">
+                <p>&copy; 2021 Spectraflix. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- script -->
+  <!-- calender link -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+  <script src="./static/js/calender.js"></script>
+
+  <script src="./static/js/app.js"></script>
+</html>
