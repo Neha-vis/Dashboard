@@ -14,8 +14,6 @@ const themeToggle = () => {
   const toggle = document.querySelector("#theme-toggle");
 
   toggle.addEventListener("click", () => {
-    console.log("name");
-
     if (document.querySelector("body").getAttribute("data-theme") === "dark") {
       document.querySelector("body").setAttribute("data-theme", "light");
       toggle.innerHTML = `<i class="fad fa-lightbulb-on"></i>`;
