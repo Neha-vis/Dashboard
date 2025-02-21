@@ -7,3 +7,34 @@ const toggleSidebar = () => {
   });
 };
 toggleSidebar();
+
+//theme.js
+
+const themeToggle = () => {
+  const toggle = document.querySelector("#theme-toggle");
+
+  toggle.addEventListener("click", () => {
+    if (document.querySelector("body").getAttribute("data-theme") === "dark") {
+      document.querySelector("body").setAttribute("data-theme", "light");
+      toggle.innerHTML = `<i class="fad fa-lightbulb-on"></i>`;
+      localStorage.setItem("theme", "light");
+    } else if (
+      document.querySelector("body").getAttribute("data-theme") === "light"
+    ) {
+      document.querySelector("body").setAttribute("data-theme", "dark");
+      toggle.innerHTML = `<i class="fad fa-lightbulb"></i>`;
+      localStorage.setItem("theme", "dark");
+    }
+  });
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+    toggle.innerHTML = `<i class="fad fa-lightbulb"></i>`;
+    localStorage.setItem("theme", "dark");
+  } else if (localStorage.getItem("theme") === "light") {
+    document.querySelector("body").setAttribute("data-theme", "light");
+    toggle.innerHTML = `<i class="fad fa-lightbulb"></i>`;
+    localStorage.setItem("theme", "light");
+  }
+};
+themeToggle();

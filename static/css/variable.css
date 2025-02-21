@@ -1,0 +1,17 @@
+:root {
+  --primary: #ef305e !important;
+  --background: #ffffff !important;
+  --foreground: #1a1b1e !important;
+  --heading-clr: #0f1014 !important;
+  --text-clr: #0f1014 !important;
+  --shadow: 0 0 8px 1px #b3aeae52;
+}
+[data-theme="dark"] {
+  --primary: #ef305e;
+  --background: #0f1014;
+  --foreground: #d6d6d6;
+  --heading-clr: #0f1014;
+  --text-clr: #ffffff;
+
+  --shadow: 0 0 20px 1px #0000008f;
+}

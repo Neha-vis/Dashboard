@@ -85,7 +85,6 @@
           </ul>
         </div>
       </div>
-
       <!-- main content -->
       <div class="main-content">
         <div class="header">
@@ -117,9 +116,32 @@
             </div>
           </div>
         </div>
-        <!-- claneder -->
-        <div id="calender"></div>
+        <!-- chart -->
+        <div class="section">
+          <div class="row row-2">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Users by Country</h4>
+                </div>
+                <div class="card-body">
+                  <div id="line-chart"></div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Users by Team</h4>
+                </div>
+                <div class="card-body">
+                  <div id="area-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- footer -->
         <div class="footer">
           <div class="container">
@@ -134,9 +156,11 @@
     </div>
   </body>
   <!-- script -->
-  <!-- calender link -->
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-  <script src="./static/js/calender.js"></script>
+  <!-- chart link -->
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- chart script -->
+  <script src="./static/js/chart.js"></script>
 
   <script src="./static/js/app.js"></script>
 </html>
